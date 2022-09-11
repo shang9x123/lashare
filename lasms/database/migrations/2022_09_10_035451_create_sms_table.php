@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('id_sms');
             $table->unsignedBigInteger('deviceId')->nullable();
-            $table->string('message',300)->nullable();
+            $table->string('message',500)->nullable();
             $table->string('status',50)->nullable();
             $table->timestamps();
         });

@@ -16,10 +16,9 @@ class SmsController extends Controller
      */
     public function index()
     {
-
-        $deviced_id = 129188;
-        $return_data = APISMS::readsms($deviced_id);
-        dd($return_data);
+        // auto update ở command
+        $data = APISMS::checksms('Agribank','test');
+        dd($data);
     }
 
     /**
